@@ -1,0 +1,64 @@
+@import "colors";
+
+#hero{
+    background: url(../images/wave1.png) no-repeat bottom,linear-gradient(to right, $primary-gradient);
+    background-size: contain;
+}
+
+.navbar{
+    background:linear-gradient(to right, $primary-gradient);
+}
+
+h2 {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        left: calc(50% - 80px);
+        bottom: -10px;
+        width: 160px;
+        height: 4px;
+        background-color: $secondary-color;
+
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        left: calc(50% - 20px);
+        bottom: -12px;
+        width: 40px;
+        height: 8px;
+        background-color: $secondary-color;
+
+    }
+}
+
+.btn-primary{
+    background:linear-gradient(to right, $primary-gradient);
+    border: none;
+}
+
+#testimonials{
+    .card{
+        border-left: 4px $secondary-color solid !important;
+        border-radius: 0;
+    }
+}
+
+#footer{
+    background:url(../images/wave2.png) no-repeat top, linear-gradient(to right, $primary-gradient);
+    background-size: contain;
+    
+    .contact-list{
+        
+        i{
+            background-image:linear-gradient(to right, $primary-gradient);
+            line-height: 40px;
+        
+        }
+    }
+}

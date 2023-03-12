@@ -1,0 +1,51 @@
+#hero {
+  background: url(../images/wave1.png) no-repeat bottom, linear-gradient(to right, rgb(216, 8, 216), rgb(87, 2, 87));
+  background-size: contain;
+}
+
+.navbar {
+  background: linear-gradient(to right, rgb(216, 8, 216), rgb(87, 2, 87));
+}
+
+h2 {
+  position: relative;
+}
+h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: calc(50% - 80px);
+  bottom: -10px;
+  width: 160px;
+  height: 4px;
+  background-color: rgb(87, 2, 87);
+}
+h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: calc(50% - 20px);
+  bottom: -12px;
+  width: 40px;
+  height: 8px;
+  background-color: rgb(87, 2, 87);
+}
+
+.btn-primary {
+  background: linear-gradient(to right, rgb(216, 8, 216), rgb(87, 2, 87));
+  border: none;
+}
+
+#testimonials .card {
+  border-left: 4px rgb(87, 2, 87) solid !important;
+  border-radius: 0;
+}
+
+#footer {
+  background: url(../images/wave2.png) no-repeat top, linear-gradient(to right, rgb(216, 8, 216), rgb(87, 2, 87));
+  background-size: contain;
+}
+#footer .contact-list i {
+  background-image: linear-gradient(to right, rgb(216, 8, 216), rgb(87, 2, 87));
+  line-height: 40px;
+}/*# sourceMappingURL=main.css.map */
